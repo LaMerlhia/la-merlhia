@@ -27,14 +27,16 @@ main{max-width:1180px;margin:auto;padding:45px 18px 90px}.intro{text-align:cente
 .flavors{margin:20px 0 0;padding:14px;border-left:3px solid var(--gold);background:#0d0d0d;color:var(--muted);line-height:1.7}
 .gallery{margin:55px 0;display:grid;grid-template-columns:1.2fr .8fr;gap:15px}.gallery img{width:100%;height:330px;object-fit:cover;border-radius:22px;border:1px solid #4b3b20}.gallery img:first-child{height:680px;grid-row:span 2}.visuals{margin:55px 0}.visuals-head{text-align:center;margin-bottom:22px}.visuals-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.visual-card{overflow:hidden;border:1px solid #4b3b20;border-radius:22px;background:#111;box-shadow:0 12px 35px #0008}.visual-card img{display:block;width:100%;height:300px;object-fit:cover}.visual-card.logo{grid-column:span 3}.visual-card.logo img{height:280px;object-fit:cover}
 .delivery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:55px 0}.info{padding:25px;border:1px solid #3b301c;border-radius:22px;background:#111}.info b{display:block;color:var(--gold2);font:700 22px Georgia,serif;margin-bottom:9px}.info p{color:var(--muted);line-height:1.6}
-
-.category-visual{margin:0 0 24px;border:1px solid #4b3b20;border-radius:22px;overflow:hidden;background:#0d0d0d;box-shadow:0 14px 35px #0008;position:relative}.category-visual img{display:block;width:100%;height:260px;object-fit:cover}.category-visual .visual-caption{position:absolute;left:16px;bottom:16px;padding:9px 15px;border-radius:999px;background:rgba(0,0,0,.72);border:1px solid rgba(215,173,75,.65);color:var(--gold2);font-weight:900;font-size:13px;backdrop-filter:blur(8px)}
-@media(max-width:800px){.category-visual img{height:210px}.category-visual .visual-caption{left:12px;bottom:12px;font-size:12px}}
 .cart{position:fixed;right:18px;bottom:18px;z-index:30;width:min(390px,calc(100% - 36px));background:#101010;border:1px solid var(--gold);border-radius:22px;padding:17px;box-shadow:0 25px 80px #000c;display:none}
 .cart.open{display:block}.cart-title{display:flex;justify-content:space-between;align-items:center;font-weight:900;color:var(--gold2)}.cart-items{max-height:220px;overflow:auto;margin:12px 0}.cart-line{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #28231b;font-size:13px}.cart-total{font-size:20px;font-weight:900;color:var(--gold2);display:flex;justify-content:space-between}
 .checkout{width:100%;margin-top:12px;padding:13px;border:0;border-radius:999px;background:#25D366;color:#061108;font-weight:900;cursor:pointer}.close{background:none;border:0;color:#aaa;font-size:18px;cursor:pointer}
 footer{padding:40px 20px;text-align:center;border-top:1px solid var(--line);color:#888}footer strong{color:var(--gold2)}.phones{font-size:21px;color:var(--gold2);font-weight:900;margin:12px}
 @media(max-width:800px){.hero{grid-template-columns:1fr}.hero-card{display:none}.products{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.gallery img:first-child{height:330px;grid-row:auto}.visuals-grid{grid-template-columns:1fr}.visual-card.logo{grid-column:auto}.visual-card.logo img{height:300px}.delivery{grid-template-columns:1fr}}
+</style>
+
+<style id="category-menu-visuals">
+.category-visual{margin:0 0 24px;border:1px solid #4b3b20;border-radius:22px;overflow:hidden;background:#0d0d0d;box-shadow:0 14px 35px #0008;position:relative}.category-visual img{display:block;width:100%;height:260px;object-fit:cover}.category-visual .visual-caption{position:absolute;left:16px;bottom:16px;padding:9px 15px;border-radius:999px;background:rgba(0,0,0,.72);border:1px solid rgba(215,173,75,.65);color:var(--gold2);font-weight:900;font-size:13px;backdrop-filter:blur(8px)}
+@media(max-width:800px){.category-visual img{height:210px}.category-visual .visual-caption{left:12px;bottom:12px;font-size:12px}}
 </style>
 </head>
 <body>
@@ -58,7 +60,7 @@ footer{padding:40px 20px;text-align:center;border-top:1px solid var(--line);colo
 <main id="menu">
 <p class="intro"><strong>Bienvenue chez La Merlhia.</strong><br>Une expérience gourmande pensée pour les petites faims, les grands moments, les anniversaires, réunions, cérémonies et événements. <strong>Les prix affichés sont en FCFA.</strong></p>
 <section class="category" id="boxes">
-      <div class="category-visual"><img src="images/collage-premium.png" alt="Box Mignardises & commandes événementielles — La Merlhia"><span class="visual-caption">Box Mignardises & commandes événementielles</span></div>
+  <div class="category-visual"><img src="images/box-evenementielle.png" alt="Box & Mignardises La Merlhia"><span class="visual-caption">Box & Mignardises</span></div>
       <div class="section-head"><span class="eyebrow">✦ LA MERLHIA</span><h2>Box Mignardises</h2><p>Une sélection préparée avec soin.</p></div>
       <div class="products"><article class="product"><div><h3>Box Apéro — 12 pièces</h3><span class="price">6 000 FCFA</span></div>
             <button class="add" data-name="Box Apéro — 12 pièces" data-price="6000">Ajouter</button></article><article class="product"><div><h3>Box Gourmande — 20 pièces</h3><span class="price">10 000 FCFA</span></div>
@@ -67,7 +69,7 @@ footer{padding:40px 20px;text-align:center;border-top:1px solid var(--line);colo
             <button class="add" data-name="Box Famille — 50 pièces" data-price="25000">Ajouter</button></article><article class="product"><div><h3>Box événementielle — sur devis</h3><span class="price">Sur devis</span></div>
             <a class="add quote" href="https://wa.me/242065465486?text=Bonjour%20La%20Merlhia%2C%20je%20souhaite%20un%20devis%20pour%20une%20box%20%C3%A9v%C3%A9nementielle.">Demander</a></article></div>
     </section><section class="category" id="snacks">
-      <div class="category-visual"><img src="images/menu-produits.png" alt="Snacks, paninis, burgers & hot-dogs — La Merlhia"><span class="visual-caption">Snacks, paninis, burgers & hot-dogs</span></div>
+  <div class="category-visual"><img src="images/snacks-paninis.png" alt="Snacks & Paninis La Merlhia"><span class="visual-caption">Snacks & Paninis</span></div>
       <div class="section-head"><span class="eyebrow">🥪 LA MERLHIA</span><h2>Snacks & Salés</h2><p>Une sélection préparée avec soin.</p></div>
       <div class="products"><article class="product"><div><h3>Panini jambon-fromage</h3><span class="price">3 000 FCFA</span></div>
             <button class="add" data-name="Panini jambon-fromage" data-price="3000">Ajouter</button></article><article class="product"><div><h3>Panini saucisson-fromage</h3><span class="price">3 000 FCFA</span></div>
@@ -83,7 +85,7 @@ footer{padding:40px 20px;text-align:center;border-top:1px solid var(--line);colo
             <button class="add" data-name="Beignet jambon-fromage" data-price="1000">Ajouter</button></article><article class="product"><div><h3>Beignet saucisson-fromage</h3><span class="price">1 000 FCFA</span></div>
             <button class="add" data-name="Beignet saucisson-fromage" data-price="1000">Ajouter</button></article></div>
     </section><section class="category" id="bouchees">
-      <div class="category-visual"><img src="images/collage-premium.png" alt="Samoussas, mini-quiches & petites bouchées — La Merlhia"><span class="visual-caption">Samoussas, mini-quiches & petites bouchées</span></div>
+  <div class="category-visual"><img src="images/bouchees.png" alt="Petites bouchées La Merlhia"><span class="visual-caption">Petites bouchées</span></div>
       <div class="section-head"><span class="eyebrow">🥟 LA MERLHIA</span><h2>Petites Bouchées Salées</h2><p>Une sélection préparée avec soin.</p></div>
       <div class="products"><article class="product"><div><h3>Samoussa viande</h3><span class="price">500 FCFA</span></div>
             <button class="add" data-name="Samoussa viande" data-price="500">Ajouter</button></article><article class="product"><div><h3>Samoussa poulet</h3><span class="price">500 FCFA</span></div>
@@ -95,7 +97,7 @@ footer{padding:40px 20px;text-align:center;border-top:1px solid var(--line);colo
             <button class="add" data-name="Box samoussas — 10 pièces" data-price="3500">Ajouter</button></article><article class="product"><div><h3>Box samoussas — 20 pièces</h3><span class="price">6 500 FCFA</span></div>
             <button class="add" data-name="Box samoussas — 20 pièces" data-price="6500">Ajouter</button></article></div>
     </section><section class="category" id="desserts">
-      <div class="category-visual"><img src="images/affiche-gaufres.png" alt="Pâtisseries, gaufres & pancakes — La Merlhia"><span class="visual-caption">Pâtisseries, gaufres & pancakes</span></div>
+  <div class="category-visual"><img src="images/affiche-gaufres.png" alt="Pâtisseries & Desserts La Merlhia"><span class="visual-caption">Pâtisseries & Desserts</span></div>
       <div class="section-head"><span class="eyebrow">🧁 LA MERLHIA</span><h2>Pâtisserie & Desserts</h2><p>Une sélection préparée avec soin.</p></div>
       <div class="products"><article class="product"><div><h3>Verrine classique</h3><span class="price">1 000 FCFA</span></div>
             <button class="add" data-name="Verrine classique" data-price="1000">Ajouter</button></article><article class="product"><div><h3>Verrine fruits / passion</h3><span class="price">1 200 FCFA</span></div>
@@ -113,7 +115,7 @@ footer{padding:40px 20px;text-align:center;border-top:1px solid var(--line);colo
             <button class="add" data-name="Gaufres fruits" data-price="2500">Ajouter</button></article><article class="product"><div><h3>Gaufres gourmandes</h3><span class="price">3 000 FCFA</span></div>
             <button class="add" data-name="Gaufres gourmandes" data-price="3000">Ajouter</button></article></div>
     </section><section class="category" id="donuts">
-      <div class="category-visual"><img src="images/affiche-donuts.png" alt="Boules de neige & donuts — La Merlhia"><span class="visual-caption">Boules de neige & donuts</span></div>
+  <div class="category-visual"><img src="images/affiche-donuts.png" alt="Boules de neige & Donuts La Merlhia"><span class="visual-caption">Boules de neige & Donuts</span></div>
       <div class="section-head"><span class="eyebrow">🍩 LA MERLHIA</span><h2>Boules de Neige & Donuts</h2><p>Une sélection préparée avec soin.</p></div>
       <div class="products"><article class="product"><div><h3>Boules de neige — 3 pièces</h3><span class="price">1 000 FCFA</span></div>
             <button class="add" data-name="Boules de neige — 3 pièces" data-price="1000">Ajouter</button></article><article class="product"><div><h3>Boules de neige — 6 pièces</h3><span class="price">1 800 FCFA</span></div>
@@ -128,7 +130,7 @@ footer{padding:40px 20px;text-align:center;border-top:1px solid var(--line);colo
             <button class="add" data-name="Box donuts — 12 pièces" data-price="7500">Ajouter</button></article><article class="product"><div><h3>Box donuts — 20 pièces</h3><span class="price">12 000 FCFA</span></div>
             <button class="add" data-name="Box donuts — 20 pièces" data-price="12000">Ajouter</button></article></div>
     </section><section class="category" id="glaces">
-      <div class="category-visual"><img src="images/affiche-glaces.png" alt="Glaces en sachet & en bâtonnet — La Merlhia"><span class="visual-caption">Glaces en sachet & en bâtonnet</span></div>
+  <div class="category-visual"><img src="images/affiche-glaces.png" alt="Glaces La Merlhia La Merlhia"><span class="visual-caption">Glaces La Merlhia</span></div>
       <div class="section-head"><span class="eyebrow">🍧 LA MERLHIA</span><h2>Glaces La Merlhia</h2><p>Une sélection préparée avec soin.</p></div>
       <div class="products"><article class="product"><div><h3>Glace en sachet — 1</h3><span class="price">300 FCFA</span></div>
             <button class="add" data-name="Glace en sachet — 1" data-price="300">Ajouter</button></article><article class="product"><div><h3>Glaces en sachet — 5</h3><span class="price">1 500 FCFA</span></div>
@@ -140,7 +142,7 @@ footer{padding:40px 20px;text-align:center;border-top:1px solid var(--line);colo
             <button class="add" data-name="Bâtonnets — 10" data-price="5000">Ajouter</button></article><article class="product"><div><h3>Option premium — par pièce</h3><span class="price">700 FCFA</span></div>
             <button class="add" data-name="Option premium — par pièce" data-price="700">Ajouter</button></article></div><p class="flavors"><strong>Saveurs :</strong> Mangue • Ananas • Passion • Citron • Orange • Coco • Fruits rouges • Exotique</p>
     </section><section class="category" id="africains">
-      <div class="category-visual"><img src="images/menu-gourmand.png" alt="Plats africains — La Merlhia"><span class="visual-caption">Plats africains</span></div>
+  <div class="category-visual"><img src="images/plats-africains.png" alt="Plats africains La Merlhia"><span class="visual-caption">Plats africains</span></div>
       <div class="section-head"><span class="eyebrow">🍗 LA MERLHIA</span><h2>Plats Africains</h2><p>Une sélection préparée avec soin.</p></div>
       <div class="products"><article class="product"><div><h3>Poulet braisé + accompagnement</h3><span class="price">3 500 FCFA</span></div>
             <button class="add" data-name="Poulet braisé + accompagnement" data-price="3500">Ajouter</button></article><article class="product"><div><h3>Poulet mayo + accompagnement</h3><span class="price">3 500 FCFA</span></div>
@@ -152,7 +154,7 @@ footer{padding:40px 20px;text-align:center;border-top:1px solid var(--line);colo
             <button class="add" data-name="Mouamba de poulet" data-price="4000">Ajouter</button></article><article class="product"><div><h3>Plat spécial La Merlhia</h3><span class="price">5 000 FCFA</span></div>
             <button class="add" data-name="Plat spécial La Merlhia" data-price="5000">Ajouter</button></article></div><p class="flavors"><strong>Accompagnements :</strong> Riz • Frites • Banane plantain • Manioc • Chikwangue • Légumes</p>
     </section><section class="category" id="europeens">
-      <div class="category-visual"><img src="images/menu-gourmand.png" alt="Plats européens — La Merlhia"><span class="visual-caption">Plats européens</span></div>
+  <div class="category-visual"><img src="images/plats-europeens.png" alt="Plats européens La Merlhia"><span class="visual-caption">Plats européens</span></div>
       <div class="section-head"><span class="eyebrow">🍝 LA MERLHIA</span><h2>Plats Européens</h2><p>Une sélection préparée avec soin.</p></div>
       <div class="products"><article class="product"><div><h3>Spaghetti bolognaise</h3><span class="price">3 000 FCFA</span></div>
             <button class="add" data-name="Spaghetti bolognaise" data-price="3000">Ajouter</button></article><article class="product"><div><h3>Spaghetti carbonara</h3><span class="price">3 500 FCFA</span></div>
@@ -165,7 +167,7 @@ footer{padding:40px 20px;text-align:center;border-top:1px solid var(--line);colo
             <button class="add" data-name="Escalope fromage" data-price="4500">Ajouter</button></article><article class="product"><div><h3>Plat européen spécial</h3><span class="price">5 000 FCFA</span></div>
             <button class="add" data-name="Plat européen spécial" data-price="5000">Ajouter</button></article></div>
     </section><section class="category" id="boissons">
-      <div class="category-visual"><img src="images/menu-produits.png" alt="Boissons & cocktails sans alcool — La Merlhia"><span class="visual-caption">Boissons & cocktails sans alcool</span></div>
+  <div class="category-visual"><img src="images/boissons.png" alt="Boissons & Cocktails La Merlhia"><span class="visual-caption">Boissons & Cocktails</span></div>
       <div class="section-head"><span class="eyebrow">🍹 LA MERLHIA</span><h2>Boissons & Cocktails sans alcool</h2><p>Une sélection préparée avec soin.</p></div>
       <div class="products"><article class="product"><div><h3>Bissap</h3><span class="price">500 FCFA</span></div>
             <button class="add" data-name="Bissap" data-price="500">Ajouter</button></article><article class="product"><div><h3>Gingembre</h3><span class="price">500 FCFA</span></div>
@@ -180,6 +182,24 @@ footer{padding:40px 20px;text-align:center;border-top:1px solid var(--line);colo
             <button class="add" data-name="Cocktail spécial La Merlhia" data-price="2500">Ajouter</button></article></div>
     </section>
 
+<div class="visuals">
+  <div class="visuals-head"><span class="eyebrow">✦ NOS GOURMANDISES</span><h2>Découvrez nos spécialités</h2><p style="color:var(--muted)">Glaces, boules de neige, donuts et gaufres préparés avec gourmandise.</p></div>
+  <div class="visuals-grid">
+    <div class="visual-card logo"><img src="images/logo-la-merlhia.png" alt="Logo La Merlhia"></div>
+    <div class="visual-card"><img src="images/affiche-glaces.png" alt="Glaces La Merlhia"></div>
+    <div class="visual-card"><img src="images/affiche-boules-de-neige.png" alt="Boules de neige La Merlhia"></div>
+    <div class="visual-card"><img src="images/affiche-donuts.png" alt="Donuts La Merlhia"></div>
+    <div class="visual-card"><img src="images/glaces-en-sachet.png" alt="Glaces en sachet La Merlhia"></div>
+    <div class="visual-card"><img src="images/glaces-en-tige.png" alt="Glaces en tige La Merlhia"></div>
+    <div class="visual-card"><img src="images/affiche-gaufres.png" alt="Gaufres La Merlhia"></div>
+  </div>
+</div>
+
+<div class="gallery">
+<img src="images/menu-produits.png" alt="Sélection de produits La Merlhia">
+<img src="images/collage-premium.png" alt="Gourmandises La Merlhia">
+<img src="images/menu-gourmand.png" alt="Carte gourmande La Merlhia">
+</div>
 
 <section class="delivery">
 <div class="info"><b>📍 Livraison</b><p>Livraison disponible selon la zone et la disponibilité. Les frais de livraison peuvent varier selon la distance.</p></div>
